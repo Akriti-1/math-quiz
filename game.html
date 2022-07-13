@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Game Main Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style2.css">
+    </head>
+    <body class="body_background">
+        <h4 id="player1_name" style="color: white"></h4> <span id="player1_score" style="color: white"></span>
+        <br>
+        <h4 id="player2_name" style="color: white"></h4> <span id="player2_score" style="color: white"></span>
+        <br>
+        <div class="col-lg-6" id="math1"></div>
+        <div>
+            <center>
+                <h2>The Math Quiz Game</h2>
+                <h3 id="player_question" style="color: white"> </h3>
+		<h3 id="player_answer" style="color: white"></h3>
+		<div id="output" class="col-lg-6"> 
+        <h4 id="question" style="color: black">Visible once the question is given</h4>
+		<label id="l" onclick="l()">Answer: <b style="color: black"></b>
+            <span class="popuptext" id="p">The answer is </span>
+		</label>
+		<input type="text" id="answer" class="form-control">
+		<br>
+		<button onclick="check()" class="btn btn-success" style="width: 30%;">Check</button>
+        </div>
+        <br>
+        <br>
+        <div id="input" class="col-lg-6"> 
+            <label>Number 1: <b style="color: black"></b>
+            </label>
+            <input type="text" id="n1" class="form-control" placeholder="Enter the first number">
+            <br>
+            <label>Number 2: <b style="color: black"></b>
+            </label>
+        <input type="text" id="n2" class="form-control" placeholder="Enter the second number">
+        <br>
+            <button onclick="Send()" class="btn btn-success" style="width: 30%;">Send</button>
+                </center>
+            </div>
+            <center>
+                <br>
+            <br>
+            <button class="button-72" role="button" onclick="Delete()">Logout</button>
+            </center>
+        <script src="game.js"></script>
+    </body>
+</html>
